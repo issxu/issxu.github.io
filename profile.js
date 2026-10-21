@@ -7,16 +7,16 @@ window.PROFILE = {
   chineseName: '许伟锋',
   github: 'https://github.com/issxu',
   introduction: {
-    en: 'I am a Master’s student in Data Science at the <a href="https://www.um.edu.mo/" target="_blank" rel="noopener">University of Macau</a>, with expected graduation in June 2027. Previously, I received my bachelor’s degree in Computer Science and Technology from <a href="https://www.hbut.edu.cn/" target="_blank" rel="noopener">Hubei University of Technology</a> in 2025.',
-    zh: '我目前在<a href="https://www.um.edu.mo/" target="_blank" rel="noopener">澳门大学</a>攻读数据科学硕士学位，预计于 2027 年 6 月毕业。此前，我于 2025 年在<a href="https://www.hbut.edu.cn/" target="_blank" rel="noopener">湖北工业大学</a>获得计算机科学与技术学士学位。'
+    en: 'I am a Master’s student in Data Science at the <a href="https://www.um.edu.mo/" target="_blank" rel="noopener">University of Macau</a>, advised by <a href="https://zdzheng.xyz/" target="_blank" rel="noopener">Zhedong Zheng</a>. I expect to graduate in June 2027. Previously, I received my bachelor’s degree in Computer Science and Technology from <a href="https://www.hbut.edu.cn/" target="_blank" rel="noopener">Hubei University of Technology</a> in 2025.',
+    zh: '我目前在<a href="https://www.um.edu.mo/" target="_blank" rel="noopener">澳门大学</a>攻读数据科学硕士学位，师从<a href="https://zdzheng.xyz/" target="_blank" rel="noopener">郑哲东（Zhedong Zheng）</a>，预计于 2027 年 6 月毕业。此前，我于 2025 年在<a href="https://www.hbut.edu.cn/" target="_blank" rel="noopener">湖北工业大学</a>获得计算机科学与技术学士学位。'
   },
   interests: {
-    en: 'My research interests lie in <strong>multimodal learning</strong> and <strong>visual reasoning</strong>. I am particularly interested in causal intervention for vision–language retrieval and learning visual rules as executable programs.',
-    zh: '我的研究兴趣是<strong>多模态学习</strong>与<strong>视觉推理</strong>，目前主要探索视觉语言检索中的因果干预，以及将视觉规则转化为可执行程序的学习方法。'
+    en: 'My research interests lie in <strong>multimodal learning</strong> and <strong>visual reasoning</strong>.',
+    zh: '我的研究兴趣是<strong>多模态学习</strong>与<strong>视觉推理</strong>。'
   },
   news: [
-    { date: '2026', en: 'My first-author work on generative causal intervention for pedestrian anomaly behavior retrieval appears in <strong>Findings of EMNLP 2026</strong>.', zh: '第一作者工作：基于生成式因果干预的行人异常行为检索，发表于 <strong>Findings of EMNLP 2026</strong>。' },
     { date: '2026', en: '<strong>RuleForge</strong>, our work on inferring and instantiating latent visual rules as executable programs, is under review.', zh: '<strong>RuleForge</strong>：将潜在视觉规则推断并实例化为可执行程序，论文在投。' },
+    { date: '2026', en: 'My first-author work on generative causal intervention for pedestrian anomaly behavior retrieval appears in <strong>Findings of EMNLP 2026</strong>.', zh: '第一作者工作：基于生成式因果干预的行人异常行为检索，发表于 <strong>Findings of EMNLP 2026</strong>。' },
     { date: '2025.08', en: 'I started my Master’s studies in Data Science at the <strong>University of Macau</strong>.', zh: '进入<strong>澳门大学</strong>攻读数据科学硕士学位。' }
   ],
   research: [
@@ -70,8 +70,8 @@ window.PROFILE = {
     }
   ],
   education: [
-    { initials: 'UM', university: { en: 'University of Macau', zh: '澳门大学' }, url: 'https://www.um.edu.mo/', degree: { en: 'Master’s student in Data Science', zh: '数据科学 · 硕士在读' }, dates: { en: 'Aug 2025 – Jun 2027 (expected)', zh: '2025.08 – 2027.06（预计）' } },
-    { initials: 'HBUT', university: { en: 'Hubei University of Technology', zh: '湖北工业大学' }, url: 'https://www.hbut.edu.cn/', degree: { en: 'Bachelor’s degree in Computer Science and Technology', zh: '计算机科学与技术 · 本科' }, dates: { en: 'Sep 2021 – Jun 2025', zh: '2021.09 – 2025.06' } }
+    { initials: 'UM', logo: 'assets/university-macau.svg', university: { en: 'University of Macau', zh: '澳门大学' }, url: 'https://www.um.edu.mo/', degree: { en: 'Master’s student in Data Science', zh: '数据科学 · 硕士在读' }, dates: { en: 'Aug 2025 – Jun 2027 (expected)', zh: '2025.08 – 2027.06（预计）' } },
+    { initials: 'HBUT', logo: 'assets/hubei-technology.png', university: { en: 'Hubei University of Technology', zh: '湖北工业大学' }, url: 'https://www.hbut.edu.cn/', degree: { en: 'Bachelor’s degree in Computer Science and Technology', zh: '计算机科学与技术 · 本科' }, dates: { en: 'Sep 2021 – Jun 2025', zh: '2021.09 – 2025.06' } }
   ],
   experience: {
     company: { en: 'Ming Yuan Cloud Group', zh: '明源云集团' },

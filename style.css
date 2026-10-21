@@ -12,7 +12,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var
 .skip-link:focus{top:12px}
 .site-header{position:sticky;top:0;background:rgba(255,255,255,.96);z-index:10;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
 .navigation{max-width:920px;padding:0 30px;margin:auto;min-height:65px;display:flex;align-items:center;gap:24px}
-.wordmark{font-family:var(--serif);font-size:27px;font-weight:bold;line-height:1;color:var(--ink);letter-spacing:-2px}
+.wordmark{font-family:var(--serif);font-size:27px;font-weight:bold;line-height:1;color:var(--ink);letter-spacing:-1px}
 .wordmark span{color:var(--blue)}
 .wordmark:hover{text-decoration:none}
 .nav-links{display:flex;align-items:center;gap:28px;margin-left:auto}
@@ -73,8 +73,10 @@ details[open] summary::after{content:" −"}
 .paper-period{font-size:10px;color:#9099a2;margin:6px 0 0}
 .figure-note{font-size:9px;color:#98a0a8;margin:18px 0 0}
 .education-section{margin-bottom:38px}
-.education-item{display:grid;grid-template-columns:43px minmax(0,1fr);gap:18px;align-items:center;margin-bottom:22px}
-.university-mark{width:43px;height:43px;display:grid;place-items:center;border-radius:50%;background:#f1f5f9;color:#7890a5;font-family:var(--serif);font-size:13px;letter-spacing:.3px;border:1px solid #e6edf3}
+.education-item{display:grid;grid-template-columns:64px minmax(0,1fr);gap:20px;align-items:center;margin-bottom:24px}
+.university-mark{width:64px;height:64px;display:grid;place-items:center;background:#fff}
+.university-logo{display:block;width:64px;height:64px;object-fit:contain}
+.university-logo[src$="hubei-technology.png"]{object-fit:cover;object-position:left center}
 .education-topline,.experience-topline{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;row-gap:0}
 .education-topline h3,.experience-topline h3{margin:0;font-size:13px;font-weight:600}
 .education-topline h3 a{color:var(--ink)}
