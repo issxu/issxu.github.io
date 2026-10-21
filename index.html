@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="author" content="Weifeng Xu">
+  <meta name="description" content="Weifeng Xu (许伟锋), Master's student in Data Science at the University of Macau. Research in multimodal learning, visual reasoning, and causal intervention.">
+  <meta property="og:title" content="Weifeng Xu · 许伟锋">
+  <meta property="og:description" content="Multimodal learning, visual reasoning, and causal intervention. Personal academic homepage.">
+  <meta property="og:type" content="website">
+  <title>Weifeng Xu · 许伟锋</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="profile.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content / 跳至正文</a>
+  <header class="site-header">
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="wordmark" href="#about" aria-label="Weifeng Xu, home">wx<span>.</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about" data-en="About" data-zh="关于">About</a>
+        <a href="#research" data-en="Research" data-zh="研究">Research</a>
+        <a href="#experience" data-en="Experience" data-zh="经历">Experience</a>
+        <a href="assets/Weifeng-Xu-CV.pdf" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a>
+      </div>
+      <button id="language-toggle" class="language-toggle" type="button" aria-label="切换为中文">中文</button>
+    </nav>
+  </header>
+  <main class="page" id="content">
+    <section class="profile" id="about" aria-labelledby="profile-name">
+      <div class="profile-text">
+        <p class="eyebrow" data-en="PERSONAL HOMEPAGE" data-zh="个人学术主页">PERSONAL HOMEPAGE</p>
+        <h1 id="profile-name">Weifeng Xu <span lang="zh-CN">许伟锋</span></h1>
+        <p class="intro" id="introduction">I am a Master's student in Data Science at the University of Macau. Previously, I received my bachelor's degree in Computer Science and Technology from Hubei University of Technology.</p>
+        <p id="research-intro">My research interests lie in multimodal learning and visual reasoning.</p>
+        <div class="contact-links">
+          <button class="text-link" id="email-button" type="button">Email</button>
+          <span class="link-divider" aria-hidden="true">/</span>
+          <a href="https://github.com/issxu" target="_blank" rel="noopener">GitHub <span class="external-arrow" aria-hidden="true">↗</span></a>
+          <span class="link-divider" aria-hidden="true">/</span>
+          <a href="assets/Weifeng-Xu-CV.pdf" target="_blank" rel="noopener" data-en="CV (中文)" data-zh="简历 (PDF)">CV (中文)</a>
+        </div>
+      </div>
+      <figure class="portrait-wrap">
+        <img class="portrait" src="assets/portrait.jpg" alt="Portrait of Weifeng Xu" width="720" height="960" fetchpriority="high">
+        <figcaption data-en="Weifeng Xu · University of Macau" data-zh="许伟锋 · 澳门大学">Weifeng Xu · University of Macau</figcaption>
+      </figure>
+    </section>
+
+    <section class="news-section" id="news" aria-labelledby="news-heading">
+      <div class="section-heading"><h2 id="news-heading" data-en="News" data-zh="近期动态">News</h2><span class="section-label">01 / UPDATES</span></div>
+      <div class="news-list" id="news-list"></div>
+    </section>
+
+    <section class="research-section" id="research" aria-labelledby="research-heading">
+      <div class="section-heading research-heading">
+        <h2 id="research-heading" data-en="Research" data-zh="研究成果">Research</h2>
+        <div class="filters" role="group" aria-label="Filter research">
+          <button type="button" class="filter active" data-filter="all" aria-pressed="true" data-en="All" data-zh="全部">All</button>
+          <button type="button" class="filter" data-filter="publication" aria-pressed="false" data-en="Publications" data-zh="已发表">Publications</button>
+          <button type="button" class="filter" data-filter="review" aria-pressed="false" data-en="Under review" data-zh="在投">Under review</button>
+        </div>
+      </div>
+      <p class="section-description" data-en="Selected work on understanding visual semantics and reasoning beyond correlations." data-zh="探索视觉语义理解，以及超越表面相关性的多模态推理。">Selected work on understanding visual semantics and reasoning beyond correlations.</p>
+      <div id="research-list" class="research-list" aria-live="polite"></div>
+      <p class="figure-note" data-en="Illustrations are conceptual summaries, not figures from the papers." data-zh="配图为研究思路示意，并非论文原图。">Illustrations are conceptual summaries, not figures from the papers.</p>
+    </section>
+
+    <section id="education" class="education-section" aria-labelledby="education-heading">
+      <div class="section-heading"><h2 id="education-heading" data-en="Education" data-zh="教育经历">Education</h2><span class="section-label">03 / BACKGROUND</span></div>
+      <div id="education-list"></div>
+    </section>
+
+    <section id="experience" class="experience-section" aria-labelledby="experience-heading">
+      <div class="section-heading"><h2 id="experience-heading" data-en="Experience" data-zh="实习经历">Experience</h2><span class="section-label">04 / INDUSTRY</span></div>
+      <div id="experience-list"></div>
+    </section>
+
+    <section class="skills-section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" data-en="Skills & Languages" data-zh="技能与语言">Skills & Languages</h2>
+      <div class="skills"><span>Python</span><span>C++</span><span>Dify / Agentic Workflow</span><span data-en="English · IELTS 7.5" data-zh="英语 · 雅思 7.5">English · IELTS 7.5</span></div>
+    </section>
+
+    <footer class="site-footer">
+      <div><p>© <span id="year">2026</span> Weifeng Xu</p><p data-en="Last updated · October 2026" data-zh="最近更新 · 2026 年 10 月">Last updated · October 2026</p></div>
+      <div class="footer-right"><p><span data-en="Layout inspired by " data-zh="排版参考 ">Layout inspired by </span><a href="https://github.com/jonbarron/jonbarron.github.io" target="_blank" rel="noopener">Jon Barron</a></p><a href="source.zip" download="issxu.github.io.zip" data-en="Download source ↗" data-zh="下载主页源码 ↗">Download source ↗</a></div>
+    </footer>
+  </main>
+
+  <dialog id="email-dialog" aria-labelledby="email-title">
+    <button class="dialog-close" type="button" aria-label="Close / 关闭">×</button>
+    <p class="eyebrow" data-en="GET IN TOUCH" data-zh="联系我">GET IN TOUCH</p>
+    <h2 id="email-title" data-en="Let's connect." data-zh="欢迎交流。">Let's connect.</h2>
+    <a class="email-address" href="mailto:xxxxdeja1@gmail.com">xxxxdeja1@gmail.com</a>
+    <div class="dialog-actions"><a class="primary-button" href="mailto:xxxxdeja1@gmail.com" data-en="Write an email ↗" data-zh="发送邮件 ↗">Write an email ↗</a><button id="copy-email" class="secondary-button" type="button" data-en="Copy address" data-zh="复制邮箱">Copy address</button></div>
+    <p class="copy-status" id="copy-status" role="status"></p>
+  </dialog>
+  <noscript><div class="noscript-note">Weifeng Xu / 许伟锋 — 澳门大学数据科学硕士在读，研究兴趣：多模态学习、视觉推理。Email: <a href="mailto:xxxxdeja1@gmail.com">xxxxdeja1@gmail.com</a>. Enable JavaScript to view research and experience, or <a href="assets/Weifeng-Xu-CV.pdf">read my CV</a>.</div></noscript>
+</body>
+</html>
