@@ -7,7 +7,7 @@
 - 个人简介、照片、邮箱、GitHub 与 Google Scholar。
 - EMNLP Findings 2026 论文、在投的 RuleForge。
 - 教育经历、实习经历、技能与语言。
-- 中英文切换、研究成果筛选、可展开详情、邮箱复制、移动端布局。
+- 中英文切换、研究成果筛选、邮箱复制、移动端布局。
 
 ## 本地查看
 
@@ -19,7 +19,7 @@
 
 - 头像：`assets/portrait.jpg`
 - 样式：`style.css`
-- 研究图片：`assets/figure1.png`、`assets/rule.png`，由提供的单页 PDF 渲染；点击图片可打开原尺寸大图。
+- 研究图片：`assets/figure1.png`、`assets/rule.png`，由提供的单页 PDF 渲染。
 - 论文与代码链接：在对应研究条目中填写 `paperUrl` / `codeUrl`，页面会自动显示链接。尚未提供的链接不会显示。
 - 页脚的最近更新时间在 `index.html` 中。
 

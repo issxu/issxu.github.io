@@ -22,6 +22,31 @@ window.PROFILE = {
   ],
   research: [
     {
+      id: 'ruleforge', type: 'review', image: 'assets/rule.png',
+      imageAlt: { en: 'RuleForge overview: visual input, rule reasoning, executable generation, and answer explanation', zh: 'RuleForge 流程图：视觉输入、规则推理、可执行生成及答案解释' },
+      title: 'RuleForge: Inferring and Instantiating Latent Visual Rules as Executable Programs',
+      venue: { en: 'Under review', zh: '论文在投' },
+      authors: { en: 'Weifeng Xu, Yaxiong Wang, Zhedong Zheng', zh: 'Weifeng Xu, Yaxiong Wang, Zhedong Zheng' },
+      period: { en: 'Jun – Oct 2026', zh: '2026.06 – 2026.10' },
+      summary: {
+        en: 'A Bongard visual reasoning benchmark and a three-stage training framework that connects visual rule understanding to executable scene programs and execution-feedback reinforcement learning.',
+        zh: '构建 Bongard 视觉推理基准，通过视觉规则理解、规则条件式场景程序生成，以及执行反馈强化学习，将规则理解连接到程序化场景生成。'
+      },
+      details: {
+        en: [
+          'Builds a benchmark of 108,797 problems: 86,000 training problems, 19,297 seen-rule test problems, and 3,500 unseen rule-combination test problems.',
+          'Evaluates executability, rule satisfaction, diversity, and robustness across multiple random execution seeds on UniLIP, InternVL3.5, Qwen3-VL, and Show-o2.',
+          'Improves UniLIP multiple-choice accuracy by 20.93 and 28.42 percentage points on seen rules and unseen combinations; scene-level rule satisfaction on seen rules rises from 2.91% to 70.99%.'
+        ],
+        zh: [
+          '构建包含 108,797 道题的基准：86,000 道训练题、19,297 道已见规则测试题、3,500 道未见规则组合测试题。',
+          '通过多随机种子执行评估程序可执行性、规则满足度、多样性与鲁棒性，并在 UniLIP、InternVL3.5、Qwen3-VL 和 Show-o2 上验证。',
+          'UniLIP 在已见规则与未见组合上的选择题准确率分别提高 20.93 和 28.42 个百分点；已见规则的场景级规则满足率由 2.91% 提升至 70.99%。'
+        ]
+      },
+      paperUrl: '', codeUrl: ''
+    },
+    {
       id: 'causal-intervention', type: 'publication', image: 'assets/figure1.png',
       imageAlt: { en: 'Figure from the causal intervention paper, showing narrative style bias, visual context confounding, and the proposed approach', zh: '因果干预论文图：叙述风格偏差、视觉场景混淆因素与本文方法' },
       title: 'Causal Intervention with LMMs: Generative Text Facilitates Fine-Grained Pedestrian Anomaly Behavior Retrieval',
@@ -45,31 +70,6 @@ window.PROFILE = {
         ]
       },
       paperUrl: '', codeUrl: 'https://github.com/issxu/Causal-Intervention-PAB'
-    },
-    {
-      id: 'ruleforge', type: 'review', image: 'assets/rule.png',
-      imageAlt: { en: 'RuleForge overview: visual input, rule reasoning, executable generation, and answer explanation', zh: 'RuleForge 流程图：视觉输入、规则推理、可执行生成及答案解释' },
-      title: 'RuleForge: Inferring and Instantiating Latent Visual Rules as Executable Programs',
-      venue: { en: 'Under review', zh: '论文在投' },
-      authors: { en: 'Visual reasoning · Executable programs', zh: '视觉推理 · 可执行程序' },
-      period: { en: 'Jun – Oct 2026', zh: '2026.06 – 2026.10' },
-      summary: {
-        en: 'A Bongard visual reasoning benchmark and a three-stage training framework that connects visual rule understanding to executable scene programs and execution-feedback reinforcement learning.',
-        zh: '构建 Bongard 视觉推理基准，通过视觉规则理解、规则条件式场景程序生成，以及执行反馈强化学习，将规则理解连接到程序化场景生成。'
-      },
-      details: {
-        en: [
-          'Builds a benchmark of 108,797 problems: 86,000 training problems, 19,297 seen-rule test problems, and 3,500 unseen rule-combination test problems.',
-          'Evaluates executability, rule satisfaction, diversity, and robustness across multiple random execution seeds on UniLIP, InternVL3.5, Qwen3-VL, and Show-o2.',
-          'Improves UniLIP multiple-choice accuracy by 20.93 and 28.42 percentage points on seen rules and unseen combinations; scene-level rule satisfaction on seen rules rises from 2.91% to 70.99%.'
-        ],
-        zh: [
-          '构建包含 108,797 道题的基准：86,000 道训练题、19,297 道已见规则测试题、3,500 道未见规则组合测试题。',
-          '通过多随机种子执行评估程序可执行性、规则满足度、多样性与鲁棒性，并在 UniLIP、InternVL3.5、Qwen3-VL 和 Show-o2 上验证。',
-          'UniLIP 在已见规则与未见组合上的选择题准确率分别提高 20.93 和 28.42 个百分点；已见规则的场景级规则满足率由 2.91% 提升至 70.99%。'
-        ]
-      },
-      paperUrl: '', codeUrl: ''
     }
   ],
   education: [
