@@ -19,7 +19,7 @@
 
 - 头像：`assets/portrait.jpg`
 - 样式：`style.css`
-- 研究图片：`assets/figure1.png`、`assets/rule.png`，由提供的单页 PDF 渲染；点击图片可打开对应 PDF 原件。
+- 研究图片：`assets/figure1.png`、`assets/rule.png`，由提供的单页 PDF 渲染；点击图片可打开原尺寸大图。
 - 论文与代码链接：在对应研究条目中填写 `paperUrl` / `codeUrl`，页面会自动显示链接。尚未提供的链接不会显示。
 - 页脚的最近更新时间在 `index.html` 中。
 
