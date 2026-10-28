@@ -14,9 +14,9 @@
       const paperLink = item.paperUrl && safeURL(item.paperUrl);
       const codeLink = item.codeUrl && safeURL(item.codeUrl);
       const title = paperLink ? `<a href="${paperLink}" target="_blank" rel="noopener">${escape(item.title)}</a>` : escape(item.title);
-      const links = [paperLink ? `<a href="${paperLink}" target="_blank" rel="noopener">Paper ↗</a>` : '', codeLink ? `<a href="${codeLink}" target="_blank" rel="noopener">Code ↗</a>` : ''].filter(Boolean).join('');
-      return `<article class="paper" id="${escape(item.id)}">
-        <img class="paper-image" src="${escape(item.image)}" alt="${escape(item.id === 'ruleforge' ? 'Conceptual sketch: visual examples, latent rule, executable program' : 'Conceptual sketch: causal intervention for vision–language alignment')}" width="182" height="140" loading="lazy">
+      const links = [paperLink ? `<a href="${paperLink}" target="_blank" rel="noopener">Paper ↗</a>` : '', codeLink ? `<a href="${codeLink}" target="_blank" rel="noopener">Code ↗</a>` : '', `<a href="${escape(item.figurePdf)}" target="_blank" rel="noopener">${language === 'en' ? 'Figure (PDF)' : '原图 (PDF)'} ↗</a>`].filter(Boolean).join('');
+      return `<article class="paper paper-${escape(item.id)}" id="${escape(item.id)}">
+        <a class="paper-figure" href="${escape(item.figurePdf)}" target="_blank" rel="noopener" aria-label="${language === 'en' ? 'Open full paper figure (PDF)' : '查看完整论文图片（PDF）'}"><img class="paper-image" src="${escape(item.image)}" alt="${escape(text(item.imageAlt))}" loading="lazy"></a>
         <div class="paper-body"><h3>${title}</h3>
           <p class="paper-authors">${escape(text(item.authors)).replace(escape(p.name), `<strong>${escape(p.name)}</strong>`)}</p>
           <p class="paper-venue"><span class="${item.type === 'review' ? 'review-label' : ''}">${escape(text(item.venue))}</span></p>
@@ -45,9 +45,10 @@
     document.querySelectorAll('a[href^="mailto:"]').forEach(el => el.href = `mailto:${p.email}`);
     document.querySelector('.email-address').textContent = p.email;
     document.querySelector('.contact-links a[href^="https://github.com/"]').href = p.github;
+    document.getElementById('scholar-link').href = p.scholar;
     document.getElementById('news-list').innerHTML = p.news.map(item => `<div class="news-item"><time class="news-date">${escape(item.date)}</time><p>${text(item)}</p></div>`).join('');
     renderResearch();
-    document.getElementById('education-list').innerHTML = p.education.map(item => `<article class="education-item"><a class="university-mark" href="${safeURL(item.url)}" target="_blank" rel="noopener"><img class="university-logo" src="${escape(item.logo)}" alt="${escape(text(item.university))} logo" width="64" height="64" loading="lazy"></a><div><div class="education-topline"><h3><a href="${safeURL(item.url)}" target="_blank" rel="noopener">${escape(text(item.university))}</a></h3><span class="dates">${escape(text(item.dates))}</span></div><p class="degree">${escape(text(item.degree))}</p></div></article>`).join('');
+    document.getElementById('education-list').innerHTML = p.education.map(item => `<article class="education-item"><div class="education-topline"><h3><a href="${safeURL(item.url)}" target="_blank" rel="noopener">${escape(text(item.university))}</a></h3><span class="dates">${escape(text(item.dates))}</span></div><p class="degree">${escape(text(item.degree))}</p></article>`).join('');
     const e = p.experience;
     document.getElementById('experience-list').innerHTML = `<article><div class="experience-topline"><h3>${escape(text(e.company))}</h3><span class="dates">${escape(text(e.dates))}</span></div><p class="experience-role">${escape(text(e.role))}</p><p class="experience-description">${escape(text(e.description))}</p></article>`;
     document.getElementById('copy-status').textContent = '';
