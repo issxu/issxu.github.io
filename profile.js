@@ -69,7 +69,7 @@ window.PROFILE = {
           '在 PAB 基准上取得 89.73% R@1 和 94.56% mAP，并在 UCC 等分布外场景中提升泛化表现。'
         ]
       },
-      paperUrl: '', codeUrl: 'https://github.com/issxu/Causal-Intervention-PAB'
+      paperUrl: 'https://aclanthology.org/2026.findings-emnlp.225/', codeUrl: 'https://github.com/issxu/Causal-Intervention-PAB'
     }
   ],
   education: [
