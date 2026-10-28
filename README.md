@@ -37,7 +37,7 @@ GitHub 用户名为 `issxu` 时，个人主页仓库名应为 `issxu.github.io`�
 
 官方说明：https://docs.github.com/en/pages/quickstart
 
-如果要保留页面底部的“下载主页源码”按钮，将源码压缩包命名为 `source.zip` 并一并上传；也可以把该链接改为你自己的 GitHub 仓库地址。
+页面底部的“查看主页源码”链接指向本仓库。
 
 ## 排版参考
 
