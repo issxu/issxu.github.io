@@ -14,9 +14,9 @@
       const paperLink = item.paperUrl && safeURL(item.paperUrl);
       const codeLink = item.codeUrl && safeURL(item.codeUrl);
       const title = paperLink ? `<a href="${paperLink}" target="_blank" rel="noopener">${escape(item.title)}</a>` : escape(item.title);
-      const links = [paperLink ? `<a href="${paperLink}" target="_blank" rel="noopener">Paper ↗</a>` : '', codeLink ? `<a href="${codeLink}" target="_blank" rel="noopener">Code ↗</a>` : '', `<a href="${escape(item.figurePdf)}" target="_blank" rel="noopener">${language === 'en' ? 'Figure (PDF)' : '原图 (PDF)'} ↗</a>`].filter(Boolean).join('');
+      const links = [paperLink ? `<a href="${paperLink}" target="_blank" rel="noopener">Paper ↗</a>` : '', codeLink ? `<a href="${codeLink}" target="_blank" rel="noopener">Code ↗</a>` : '', `<a href="${escape(item.image)}" target="_blank" rel="noopener">${language === 'en' ? 'Full figure' : '查看原图'} ↗</a>`].filter(Boolean).join('');
       return `<article class="paper paper-${escape(item.id)}" id="${escape(item.id)}">
-        <a class="paper-figure" href="${escape(item.figurePdf)}" target="_blank" rel="noopener" aria-label="${language === 'en' ? 'Open full paper figure (PDF)' : '查看完整论文图片（PDF）'}"><img class="paper-image" src="${escape(item.image)}" alt="${escape(text(item.imageAlt))}" loading="lazy"></a>
+        <a class="paper-figure" href="${escape(item.image)}" target="_blank" rel="noopener" aria-label="${language === 'en' ? 'Open full paper figure' : '查看完整论文图片'}"><img class="paper-image" src="${escape(item.image)}" alt="${escape(text(item.imageAlt))}" loading="lazy"></a>
         <div class="paper-body"><h3>${title}</h3>
           <p class="paper-authors">${escape(text(item.authors)).replace(escape(p.name), `<strong>${escape(p.name)}</strong>`)}</p>
           <p class="paper-venue"><span class="${item.type === 'review' ? 'review-label' : ''}">${escape(text(item.venue))}</span></p>

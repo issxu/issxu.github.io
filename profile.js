@@ -22,7 +22,7 @@ window.PROFILE = {
   ],
   research: [
     {
-      id: 'causal-intervention', type: 'publication', image: 'assets/figure1.png', figurePdf: 'assets/figure1.pdf',
+      id: 'causal-intervention', type: 'publication', image: 'assets/figure1.png',
       imageAlt: { en: 'Figure from the causal intervention paper, showing narrative style bias, visual context confounding, and the proposed approach', zh: '因果干预论文图：叙述风格偏差、视觉场景混淆因素与本文方法' },
       title: 'Causal Intervention with LMMs: Generative Text Facilitates Fine-Grained Pedestrian Anomaly Behavior Retrieval',
       venue: { en: 'Findings of EMNLP 2026', zh: 'Findings of EMNLP 2026' },
@@ -47,7 +47,7 @@ window.PROFILE = {
       paperUrl: '', codeUrl: 'https://github.com/issxu/Causal-Intervention-PAB'
     },
     {
-      id: 'ruleforge', type: 'review', image: 'assets/rule.png', figurePdf: 'assets/rule.pdf',
+      id: 'ruleforge', type: 'review', image: 'assets/rule.png',
       imageAlt: { en: 'RuleForge overview: visual input, rule reasoning, executable generation, and answer explanation', zh: 'RuleForge 流程图：视觉输入、规则推理、可执行生成及答案解释' },
       title: 'RuleForge: Inferring and Instantiating Latent Visual Rules as Executable Programs',
       venue: { en: 'Under review', zh: '论文在投' },
