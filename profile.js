@@ -44,7 +44,7 @@ window.PROFILE = {
           'UniLIP 在已见规则与未见组合上的选择题准确率分别提高 20.93 和 28.42 个百分点；已见规则的场景级规则满足率由 2.91% 提升至 70.99%。'
         ]
       },
-      paperUrl: '', codeUrl: ''
+      paperUrl: 'https://arxiv.org/abs/2610.38737', codeUrl: ''
     },
     {
       id: 'causal-intervention', type: 'publication', image: 'assets/figure1.png',
